@@ -225,7 +225,7 @@ h4.title-decor {
 }
 
 @media (min-width: 768px) {
-  .section-columns {
+  .section-advice {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
