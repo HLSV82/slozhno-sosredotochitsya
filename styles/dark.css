@@ -1,21 +1,7 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-.page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-}
-
 :root .theme_dark {
-
   --text-color: rgba(241, 178, 206, 1);
-  --main-font: "IBM Plex mono", sans-serif;
-  --background: rgba(0, 0, 40, 1) url("../images/cover-image-dark.png") no-repeat center / cover;
+  --background: rgba(0, 0, 40, 1) url("../images/cover-image-dark.png")
+    no-repeat center / cover;
   --accent-color: rgba(255, 0, 112, 1);
   --accent-color-btn: rgba(255, 0, 112, 1);
   --text-color-accent: rgba(219, 0, 255, 1);
@@ -24,7 +10,4 @@
   --display-header-decor: inline-flex;
   --color-section-title: rgba(255, 0, 112, 1);
   --accent-color-opasity: rgba(255, 0, 112, 0.4);
-
 }
-
- 

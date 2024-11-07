@@ -48,7 +48,7 @@
 
 .header__title {
   color: var(--text-color-accent);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--logo-size_mobile);
   line-height: 96px;
   text-shadow: 4px 4px 0 var(--accent-color);
 }
@@ -66,6 +66,15 @@
 
 .title-decor {
   margin-block: 20px 10.5px;
+  color: var(--bg-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  background-color: var(--accent-color-title);
+}
+
+.title-decor-header {
+  margin-block: 10px 10.5px;
   color: var(--bg-color);
   font-weight: 700;
   font-size: 18px;
@@ -125,7 +134,7 @@
   .header__title {
     position: relative;
     margin-inline-start: -20px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: var(--logo-size_desktop);
   }
   .header__subtitle {
     line-height: 23.4px;
@@ -164,18 +173,13 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: var(--accent-color-btn) 1px solid;
+  border-block-end: currentColor 1px solid;
   outline: none;
   transition-duration: 0.2s;
 }
 
 .header__theme-menu-button_active {
-  border: var(--accent-color-btn) 1px solid;
-  pointer-events: none;
-}
-
-.header__theme-menu-button_active:hover {
-  border: 1px solid var(--accent-color-opasity);
+  border: currentColor 1px solid;
   pointer-events: none;
 }
 
@@ -225,6 +229,7 @@ h4.title-decor {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
+    grid-auto-flow: column;
   }
 
   .section-content {
@@ -246,6 +251,7 @@ h4.title-decor {
     display: grid;
     grid-template-columns: 315px auto;
     gap: 20px;
+    grid-auto-flow: column;
   }
 
   .what__title {
@@ -269,7 +275,7 @@ h4.title-decor {
 }
 
 .links:focus-visible {
-  outline: var(--text-color) solid 1.2px;
+  outline: currentColor solid 1.2px;
 }
 
 /*GALERY*/
@@ -328,7 +334,6 @@ h4.title-decor {
   .art__img__street {
     grid-area: street;
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -341,7 +346,6 @@ h4.title-decor {
     padding-block-start: 5px;
     max-block-size: calc(100% - 5px);
   }
-
 }
 
 /*FOOTER*/
@@ -357,14 +361,13 @@ h4.title-decor {
 .footer__title {
   justify-self: center;
   color: var(--text-color-accent);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size:  var(--logo-size_mobile);
   line-height: 95.7px;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (min-width: 768px) {
   .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: var(--logo-size_desktop);
   }
-
 }
